@@ -28,7 +28,7 @@ const shop = {
   },
   // 取得商品資料 (產品相關(客戶) GET)
   getProducts(){
-    axios.get(`${apiUrl}/products`)
+    axios.get(`${apiPath}customer/${apiUser}/products`)
     .then((res) =>{
       this.data.products = res.data.products;
       this.renderProducts(this.data.products);
@@ -86,7 +86,7 @@ const shop = {
   },
   // 取得購物車資料 (購物車相關(客戶) GET)
   getCarts(){
-    axios.get(`${apiUrl}/carts`)
+    axios.get(`${apiPath}customer/${apiUser}/carts`)
     .then((res) =>{
       this.data.carts = res.data.carts;
       this.renderCart();
@@ -171,7 +171,7 @@ const shop = {
       "quantity": numCheck
       }
     };    
-    axios.post(`${apiUrl}/carts`, obj)
+    axios.post(`${apiPath}customer/${apiUser}/carts`, obj)
       .then((res) =>{
         shop.data.carts = res.data.carts;
         alert('成功新增至購物車');
@@ -186,7 +186,7 @@ const shop = {
   deleteAllCart(e){
     e.preventDefault();
     if(e.target.classList.contains('discardAllBtn')){
-      axios.delete(`${apiUrl}/carts`)
+      axios.delete(`${apiPath}customer/${apiUser}/carts`)
       .then((res) =>{
         shop.data.carts = res.data.carts;
         alert('已清空購物車');
@@ -203,7 +203,7 @@ const shop = {
     e.preventDefault();
     let id = e.target.dataset.id;
     let title = shop.data.carts.filter(i => i.id == id)[0].product.title;
-    axios.delete(`${apiUrl}/carts/${id}`)
+    axios.delete(`${apiPath}customer/${apiUser}/carts/${id}`)
     .then((res) =>{
       shop.data.carts = res.data.carts;
       alert(`已成功刪除購物車內的 ${title}`);
@@ -228,7 +228,7 @@ const shop = {
       }
     };
     
-    axios.post(`${apiUrl}/orders`, orderContent)
+    axios.post(`${apiPath}customer/${apiUser}/orders`, orderContent)
       .then((res) =>{
         console.log(res);
         if(res.status == 200){

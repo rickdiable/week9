@@ -1,4 +1,3 @@
-// C3.js
 let chart = c3.generate({
   bindto: '#chart', // HTML 元素綁定
   data: {
