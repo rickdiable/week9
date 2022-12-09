@@ -1,1 +1,0 @@
-export const apiUrl = "https://livejs-api.hexschool.io/api/livejs/v1/customer/jsprac0406";
