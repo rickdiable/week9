@@ -1,0 +1,43 @@
+$text-grey: #00807E;
+$text-grey-100: #818A91;
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  transition: all .2s;
+}
+
+
+.d-flex{
+  display: flex;
+}
+
+.ai-center{
+  align-items: center;
+}
+
+.poa{
+  position: absolute;
+}
+
+.por{
+  position: relative;
+}
+
+.d-none{
+  display: none;
+}
+
+// .c3{
+//   .c3-chart-arc text{
+//     display: none;
+//   }
+// }

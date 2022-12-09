@@ -1,0 +1,28 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css",      
+    }
+  ],
+  "liveSassCompile.settings.generateMap": true,
+  "liveServer.settings.port": 5501,
+  /* 編輯器內建功能設定 */
+  "editor.multiCursorModifier": "ctrlCmd", // 按著Ctrl並點擊不同位置進行多選
+    "editor.snippetSuggestions": "top", // 輸入時，自動format，調整格式
+    "editor.formatOnPaste": false, // 貼上時，自動format，調整格式
+    "editor.formatOnSave": false, // 存檔時，自動format，調整格式
+    "editor.wordWrap": "on", // 單行過長時，換行顯示而不是顯示ScrollBar
+    // "editor.fontSize": 18, // 字體大小
+    "editor.tabSize": 2, // 一個tab等於兩個space
+    // "editor.rulers": [80, 120], // 在80~120字的地方畫線提醒字數不要太多
+    // "window.zoomLevel": 0,
+    "editor.fontLigatures": true, // 縮放比例
+    "explorer.confirmDelete": false, // 在目錄刪除檔案時，是否需要再次確認
+    "workbench.startupEditor": "newUntitledFile", // IDE啟動時，目錄無工作項目則自動開新空白文件
+    "extensions.ignoreRecommendations": false, // 延伸套件的通知是否不再顯示
+    "emmet.triggerExpansionOnTab": true, // 固定開啟，必定展開Emmet縮寫
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+}
